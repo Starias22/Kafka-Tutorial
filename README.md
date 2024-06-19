@@ -1,5 +1,9 @@
 # Apache Kafka Tutorial
 
+## Inspired by
+
+This tutorial is inspired by [this Youtube tutorial playlist](https://youtu.be/gg-VwXSRnmg?list=PLkz1SCf5iB4enAR00Z46JwY9GGkaS2NON). Watch the video for a detailed walkthrough.
+
 Apache Kafka is a distributed streaming platform developed at LinkedIn in 2009. It became open source in 2011 and was integrated into the Apache Software Foundation in 2014. Kafka is widely used to create real-time data pipelines and streaming applications. It functions similarly to a messaging system, transferring data from one source to another. This tutorial will guide you through the basics of Kafka and how to set up a Kafka environment.
 
 ## Key Concepts
