@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y curl
 # Download Kafka package for Spark
 RUN curl -o /opt/bitnami/spark/jars/spark-sql-kafka-0-10_2.12-3.5.1.jar https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.5.1/spark-sql-kafka-0-10_2.12-3.5.1.jar
 
+
+# Set environment variable
+ENV PYSPARK_SUBMIT_ARGS="--packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.5.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 pyspark-shell"
+
 # Copy any necessary files
 #COPY requirements.txt /opt/requirements.txt
 #RUN pip install -r /opt/requirements.txt
@@ -19,4 +23,4 @@ RUN curl -o /opt/bitnami/spark/jars/spark-sql-kafka-0-10_2.12-3.5.1.jar https://
 #ENV SPARK_HOME /opt/spark
 
 # Set the entrypoint to Spark
-#ENTRYPOINT ["/opt/spark/bin/spark-submit"]
+ENTRYPOINT ["/opt/spark/bin/spark-submit"]
