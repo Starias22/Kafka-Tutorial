@@ -23,4 +23,4 @@ ENV PYSPARK_SUBMIT_ARGS="--packages org.apache.spark:spark-streaming-kafka-0-10_
 #ENV SPARK_HOME /opt/spark
 
 # Set the entrypoint to Spark
-ENTRYPOINT ["/opt/spark/bin/spark-submit"]
+#ENTRYPOINT ["/opt/spark/bin/spark-submit"]
