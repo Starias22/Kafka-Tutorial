@@ -1,4 +1,3 @@
-
 FROM bitnami/spark
 
 # Install curl
