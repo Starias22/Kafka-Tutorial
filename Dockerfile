@@ -16,7 +16,7 @@ ENV PYSPARK_SUBMIT_ARGS="--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3
 
 # Copy any necessary files
 # COPY requirements.txt /opt/requirements.txt
-# RUN pip install -r /opt/requirements.txt
+RUN pip install  nltk
 
 # Ensure necessary environment variables are set
 # ENV SPARK_HOME /opt/spark
